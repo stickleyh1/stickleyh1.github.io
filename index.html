@@ -1,23 +1,65 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Howard Stickley | Welcome</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+    <header>
+        <section class="container">
+            <h1><span>Howard</span> Stickley</h1>
+            <nav>
+                <ul>
+                    <li class="current"><a href="./index.html">Home</a></li>
+                    <li><a href="./education.html">Education</a></li>
+                    <li><a href="./experience.html">Work Experience</a></li>
+                    <li><a href="./achievements.html">Achievements</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <section id="showcase">
+        <section class="container">
+            <p>Programming one line at a time, for a better tomorrow!</p>
+        </section>
+    </section>
+    <section>
+        <section class="welcome">
+            <section class="dark">
+                <h2>Welcome!</h2>
+                <p>Thank you for visiting my website :)</p>
+            </section>
+        </section>
+    </section>
+    <section id="skills">
+        <section class="container">
+            <section class="box">
+                <figure>
+                    <img src="https://qph.ec.quoracdn.net/main-qimg-10a382ca2f4c6481baef77b1d38b4ae5">
+                    <p>Coding is my passion</p>
+                </figure>
+            </section>
+            <section class="box">
+                <figure>
+                    <img src="https://cdn2.iconfinder.com/data/icons/ecqlipse2/KEYBOARD-MOUSE---SETTINGS.png">
+                    <p>Gaming is my passion</p>
+                </figure>
+            </section>
+            <section class="box">
+                <figure>
+                    <img src="https://images.vexels.com/media/users/3/139759/isolated/lists/a5fe3e12fc191e0dacf5f24f8785d477-boy-break-dancing.png">
+                    <p>Knowledge is my passion</p>
+                </figure>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <h4>2017&copy; Howard Stickley</h4>
+    </footer>
+</body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>

@@ -1,53 +1,148 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
+body{
+  font-family: arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin:0;
+  background-color: #f4f4f4;
+}
 
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+}
 
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+ul{
+  margin: 0;
+  padding: 0;
 }
 
 
+aside{
+  float:right;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.dark{
+  padding:15px;
+  background:#484b4f;
+  color:#ffffff;
+}
+
+header {
+  background-color: #484b4f;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #1667E0 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header h1{
+  font-size: 30px;
+  float:left;
+  margin: 0;
+}
+
+header h1 span{
+  color: #1667E0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .current a{
+  color: #1667E0;
+  font-weight: bold;
+}
+
+header a:hover {
+  color:#cccccc;
+  font-weight: bold;
+}
+
+#showcase{
+  min-height: 400px;
+  background:url('https://agbeat.com/wp-content/uploads/2012/10/twitter-cover-photo-2.jpg');
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h2{
+  margin-top: 90px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+#showcase p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.welcome{
+  padding:0;
+  margin:0;
+  width:100%;
+  text-align: center;
+}
+
+.welcome h2{
+  color:#1667E0;
+}
+
+#skills{
+  margin-top: 20px;
+}
+
+#skills .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:15px;
+}
+
+#skills .box img{
+  width:90px;
+}
+
+footer {
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  text-align: center;
+  background-color: #1667E0;
+}
+
+@media(max-width: 768px){
+  header h1,
+  header nav,
+  header nav li,
+  #skills .box{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+}
