@@ -34,7 +34,8 @@ header {
   color: #ffffff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #1667E0 3px solid;
+  border-bottom: 
+    3px solid;
 }
 
 header a{
@@ -57,7 +58,7 @@ header h1{
 }
 
 header h1 span{
-  color: #1667E0;
+  color: #5998f7;
 }
 
 header nav{
@@ -66,7 +67,7 @@ header nav{
 }
 
 header .current a{
-  color: #1667E0;
+  color: #5998f7;
   font-weight: bold;
 }
 
@@ -101,7 +102,7 @@ header a:hover {
 }
 
 .welcome h2{
-  color:#1667E0;
+  color:#5998f7;
 }
 
 #skills{
@@ -124,7 +125,7 @@ footer {
   margin-top:20px;
   color:#ffffff;
   text-align: center;
-  background-color: #1667E0;
+  background-color: #5998f7;
 }
 
 @media(max-width: 768px){
